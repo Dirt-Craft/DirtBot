@@ -45,7 +45,7 @@ public class MiscModule extends Module<MiscModule.ConfigDataMisc, MiscModule.Emb
         spec.define("discord.channel.player-count-channel-id", "602886089971204100");
         spec.define("discord.channel.member-count-channel-id", "602887766430187541");
 
-        spec.define("discord.embeds.footer", "DirtCraft's DirtBOT | 2019");
+        spec.define("discord.embeds.footer", "DirtCraft's DirtBOT | 2020");
         spec.define("discord.embeds.title", "<:redbulletpoint:539273059631104052> DirtCraft's DirtBOT <:redbulletpoint:539273059631104052>");
         spec.define("discord.embeds.color", 16711680);
 
