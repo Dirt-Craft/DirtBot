@@ -70,7 +70,7 @@ public class Ticket {
         if(channel == null || channel.toLowerCase().equals("null")) {
             this.channel = null;
             return true;
-        } else if(channel.length() == 18) {
+        } else if(channel.length() >= 18) {
             this.channel = channel;
             return true;
         } else return false;
