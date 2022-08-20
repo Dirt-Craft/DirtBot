@@ -573,7 +573,7 @@ public class TicketModule extends Module<TicketModule.ConfigDataTickets, TicketM
 
     private void notificationSubscribed(GuildMessageReactionAddEvent event, Message message) {
         if(message.getEmbeds().size() > 0 && message.getEmbeds().get(0).getFields().size() > 0) {
-            String server = message.getEmbeds().get(0).getFields().get(0).getName().substring(10, message.getEmbeds().get(0).getFields().get(0).getName().length() - 16);
+            String server = message.getEmbeds().get(0).getFields().get(0).getName().substring(12, message.getEmbeds().get(0).getFields().get(0).getName().length() - 18);
             EmbedBuilder subscriptionNotification = getEmbedUtils().getExternalEmbed().addField("__Subscribed__", "You have successfully subscribed to notifications for **" + server + "** tickets!", false);
             event.getUser().openPrivateChannel().queue((privateChannel) -> privateChannel.sendMessage(subscriptionNotification.build()).queue());
         }
